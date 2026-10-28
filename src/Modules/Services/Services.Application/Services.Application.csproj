@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Services.Domain\Services.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DTOs\Requests\" />
+    <Folder Include="DTOs\Responses\" />
+    <Folder Include="UseCases\Commands\CreateService\" />
+    <Folder Include="UseCases\Commands\AssingProviderToService\" />
+    <Folder Include="UseCases\Commands\DesactivateService\" />
+    <Folder Include="UseCases\Commands\ConfigueServiceAvailabality\" />
+    <Folder Include="UseCases\Commands\UpdateService\" />
+    <Folder Include="UseCases\Queries\GetServiceDetailWithProviders\" />
+    <Folder Include="UseCases\Queries\GetElegibleServicesForProvider\" />
+    <Folder Include="UseCases\Queries\GetServicePricingMatrix\" />
+    <Folder Include="UseCases\Queries\SearchServicesCatalog\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="16.2.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.2.0" />
+    <PackageReference Include="MediatR" Version="13.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.3.13" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.12" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,12 @@
+<Solution>
+
+  <!-- Carpeta Virtual de Módulos con sus capas Clean Architecture -->
+  <Folder Name="/Modules/">
+    <Project Path="src/Modules/Calendar/Calendar.Application/Calendar.Application.csproj" />
+    <Project Path="src/Modules/Calendar/Calendar.Domain/Calendar.Domain.csproj" />
+    <Project Path="src/Modules/Calendar/Calendar.Infrastructure/Calendar.Infrastructure.csproj" />
+    <Project Path="src/Modules/Calendar/Calendar.Presentation/Calendar.Presentation.csproj" />
+  </Folder>
+  <Project Path="src/SharedKernel/SharedKernel.csproj" />
+  <Project Path="src/WebApi/WebApi.csproj" />
+</Solution>
