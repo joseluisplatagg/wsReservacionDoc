@@ -49,7 +49,7 @@ namespace SharedKernel.Infrastructure
             
             // Configura las políticas de CORS personalizadas para controlar 
             // el acceso desde orígenes externos.
-            services.AddCustomCors();
+            services.AddCustomCors(configuration);
             // Agrega un servicio para acceder al contexto HTTP actual en cualquier parte de la aplicación
             services.AddHttpContextAccessor();
             // Registra el middleware global para manejar excepciones no controladas en la aplicación
