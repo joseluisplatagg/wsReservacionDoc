@@ -47,6 +47,17 @@ namespace Calendar.Application.Mapper
                 dest => dest.HoraCita,
                 opt => opt.MapFrom(src => src.HoraCita));
 
+            CreateMap<CitaAggregateRoot, ObtenerCitaResponseDTO>()
+                .ForMember(
+                    dest => dest.hora,
+                    opt => opt.MapFrom(src => src.HoraCita))
+                .ForMember(
+                    dest => dest.medicoNombre,
+                    opt => opt.MapFrom(src => src.DoctorSeleccionadoCita))
+                .ForMember(
+                    dest => dest.pacienteNombre,
+                    opt => opt.MapFrom(src => src.Paciente.NombreCompletoPaciente));
+
         }
 
         private void DomainToViewModelMappingProfile()

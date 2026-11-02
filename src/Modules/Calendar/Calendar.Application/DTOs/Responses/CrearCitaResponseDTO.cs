@@ -6,6 +6,6 @@ namespace Calendar.Application.DTOs.Responses
 {
     public class CrearCitaResponseDTO
     {
-        public bool Success { get; set; }
+        public Guid CitaId { get; set; }
     }
 }

@@ -34,7 +34,7 @@ public class CrearCitaCommandHandler(
 
         await unitOfWork.GetRepository<CitaAggregateRoot>().AddAsync(cita);
         await unitOfWork.CompleteAsync();
-        return OperationResult.With(new CrearCitaResponseDTO { Success = true });
+        return OperationResult.With(new CrearCitaResponseDTO { CitaId = cita.Id });
     }
 }
 
