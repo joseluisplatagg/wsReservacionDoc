@@ -52,6 +52,9 @@ namespace Calendar.Application.Mapper
                     dest => dest.hora,
                     opt => opt.MapFrom(src => src.HoraCita))
                 .ForMember(
+                    dest => dest.fecha,
+                    opt => opt.MapFrom(src => src.DiaCita))
+                .ForMember(
                     dest => dest.medicoNombre,
                     opt => opt.MapFrom(src => src.DoctorSeleccionadoCita))
                 .ForMember(
